@@ -1,0 +1,31 @@
+%% Am folosit mediul de dezvoltare IntelliJ si am creat o aplicatie gradle, iar in build.gradle am inclus dependintele pentru 
+frameworkul Spring. Aici este codul SQL pentru crearea tabelelor. Celelalte fisiere sunt clasele Java si fisierul beans.xml
+
+
+
+
+CREATE DATABASE university;
+use university;
+
+CREATE TABLE Course(
+   id INT NOT NULL,
+   name nvarchar (50)     
+   teacher nvarchar(50)
+   studyyear  int       
+   PRIMARY KEY (id)
+);
+
+
+CREATE TABLE Enroll(
+   name nvarchar (50)     
+   course nvarchar(50)
+);
+
+
+CREATE TABLE Student(
+   id int NOT NULL,
+   name nvarchar (50)     
+   birthdate nvarchar(50)
+   address nvarchar(50)      
+   PRIMARY KEY (id)
+);
